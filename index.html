@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Integrador</title>
+    <link rel="stylesheet" href="/PI/style.css">
+</head>
+<body>
+    <div class="conteudo">      
+        <h2>Super Troca de Óleo</h2>  
+    </div>
+
+    <div class="container">
+        <div class="grupo" onmouseover="mostrarCampo(this)" onmouseout="esconderCampo(this)">
+            Grupo
+            <div class="campo1">
+                Equipe DRP04-PJI110-Sala-003-Grupo-015
+            </div>
+        </div>
+            <div class="item" onmouseover="mostrarCampo(this)" onmouseout="esconderCampo(this)">
+            Item 2
+                <div class="campo2">
+                Campo do Item 2
+                </div>
+            </div>
+        
+    </div>
+
+
+    <div class="container2">
+        <ul class="lista-itens">
+            <li>
+                <span>Cadastro de usuário</span>
+                 <form class="form-escondido">
+                <input type="text" placeholder="Nome" pattern="[A-Za-zÀ-ÿ\s]+" title="Digite apenas letras">
+                <input type="text" placeholder="CPF" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Digite um CPF válido. Exemplo: 999.999.999-00">
+                <input type="password" placeholder="Senha" pattern="\d{4}" title="Digite uma senha com 4 dígitos" maxlength="4" required>
+                <button type="submit">Enviar</button>
+            </form>
+            </li>
+            <li>
+                <span>Login</span>
+                <form class="form-escondido" onsubmit="return login()">
+                <input type="text" placeholder="CPF" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Digite um CPF válido" required>
+                <input type="password" placeholder="Senha" pattern="\d{4}" title="Digite uma senha com 4 dígitos" maxlength="4" required>
+                <button type="submit">Entrar</button>
+            </form>
+            </li>
+            <li>
+                <span>Item 3</span>
+                <form class="form-escondido">
+                    <input type="text" placeholder="Nome">
+                    <input type="email" placeholder="Email">
+                    <button type="submit">Enviar</button>
+                </form>
+            </li>
+        </ul>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
